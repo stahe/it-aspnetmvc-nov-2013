@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stahe.github.io/it-aspnetmvc-nov-2013/sitemap.xml
