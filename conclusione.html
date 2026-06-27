@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/focus.css">
     
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nozioni-di-base-sulla-programmazione-web.html" class="md-nav__link">
+      <a href="le-basi-della-programmazione-web.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Nozioni di base sulla programmazione web
+    2. Le basi della programmazione Web
   
 
     
@@ -411,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="la-vista-e-il-suo-modello.html" class="md-nav__link">
+      <a href="la-vista-e-il-relativo-modello.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. La vista e il suo modello
+    5. La vista e il relativo modello
   
 
     
@@ -465,14 +467,14 @@
   
   
     <li class="md-nav__item">
-      <a href="ajaxificare-unapplicazione-aspnet-mvc.html" class="md-nav__link">
+      <a href="ajaxificazione-di-unapplicazione-aspnet-mvc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. Ajaxificare un'applicazione ASP.NET MVC
+    7. Ajaxificazione di un’applicazione ASP.NET MVC
   
 
     
@@ -623,45 +625,34 @@
   
 
 
-<p><a id="refheading1242412030931382"></a></p>
+<p><span id="refheading1242412030931382" name="refheading1242412030931382" class="odt-bookmark-anchor"></span></p>
 <h1 id="10-conclusione">10. <span style="color: #365f91">Conclusione</span></h1>
-<p><span style="color: #000000">Rivediamo ciò che abbiamo trattato in questo documento:</span></p>
-<p><span style="color: #000000"> </span></p>
+<p><span style="color: #000000">Ricordiamo ciò che è stato trattato in questo documento:</span></p>
 <ul>
-  <li><span style="color: #000000">I capitoli da 1 a 8 ci hanno illustrato i fondamenti del framework ASP.NET MVC;</span>
+  <li><span style="color: #000000">i capitoli da 1 a 8 ci hanno presentato i fondamenti del framework ASP.NET MVC;</span>
   </li>
-  <li><span style="color: #000000">Il capitolo 9 è stato dedicato a un caso di studio, partendo da un&#x27;architettura semplificata:</span>
+  <li><span style="color: #000000">il capitolo 9 è stato dedicato a un caso di studio, inizialmente con un’architettura semplificata:</span>
   </li>
 </ul>
 
-<p><span style="color: #000000"> </span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003EC00000168C00EE3B7.png" width="502" height="180" style="display:inline-block; margin:4px;width:13.282cm;height:4.763cm;" class="odt-zoomable" data-zoom-src="images/10000000000003EC00000168C00EE3B7.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000003EC00000168C00EE3B7.png" width="502" height="180" style="display:inline-block; margin:4px;width:13.282cm;height:4.763cm;" class="odt-zoomable" data-zoom-src="images/10000000000003EC00000168C00EE3B7.png" /></td></tr></table>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Questa architettura semplificata ci ha permesso di concentrarci esclusivamente sul livello [web] e ha anche facilitato i test. Successivamente abbiamo utilizzato la seguente architettura più complessa:</span></p>
-<p><span style="color: #000000"> </span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046900000180D87846F9.png" width="565" height="192" style="display:inline-block; margin:4px;width:14.937cm;height:5.08cm;" class="odt-zoomable" data-zoom-src="images/100000000000046900000180D87846F9.png" /></td></tr></table>
+<p><span style="color: #000000">Questa architettura semplificata ci ha permesso di concentrarci esclusivamente sul livello [web] e ha inoltre facilitato i test. Successivamente abbiamo utilizzato la seguente architettura più complessa:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000046900000180D87846F9.png" width="565" height="192" style="display:inline-block; margin:4px;width:14.937cm;height:5.08cm;" class="odt-zoomable" data-zoom-src="images/100000000000046900000180D87846F9.png" /></td></tr></table>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Abbiamo osservato che i livelli [business], [DAO] ed [EF5] introducevano una notevole complessità nell&#x27;intera applicazione, il che, col senno di poi, giustificava l&#x27;uso di un&#x27;architettura semplificata per lo sviluppo del livello [web].</span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">I lettori che hanno completato questo caso di studio dovrebbero aver acquisito una solida comprensione di ASP.NET MVC e del concetto di Single-Page Application (SPA).</span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">C&#x27;è sicuramente una cosa che manca in questo documento: </span><strong><span style="color: #000000">i test unitari</span></strong><span style="color: #000000">. Questi avrebbero dovuto essere eseguiti in vari punti:</span></p>
+<p><span style="color: #000000">Abbiamo potuto constatare che i livelli [métier], [DAO] e [EF5] introducessero una notevole complessità nell’intera applicazione, il che ha giustificato, a posteriori, l’uso di un’architettura semplificata per lo sviluppo del livello [web].</span></p>
+<p><span style="color: #000000">Il lettore che ha seguito questo caso di studio dovrebbe aver acquisito una buona padronanza di ASP.NET, MVC e del concetto di APU, ovvero l’applicazione a pagina singola.</span></p>
+<p><span style="color: #000000">In questo documento manca sicuramente un elemento: </span><strong>i test unitari</strong><span style="color: #000000">. Questi avrebbero dovuto essere effettuati in diversi punti:</span></p>
 <ul>
   <li><span style="color: #000000">test del livello [DAO];</span>
   </li>
-  <li><span style="color: #000000">test del livello [business] vero e proprio;</span>
+  <li><span style="color: #000000">test del livello [métier] effettivo;</span>
   </li>
   <li><span style="color: #000000">test delle azioni del livello [web].</span>
   </li>
 </ul>
 
-<p><span style="color: #000000"> </span></p>
-<p><strong><span style="color: #000000">Adam Freeman, </span></strong><span style="color: #000000">nel suo libro &quot;</span><strong><span style="color: #000000">Pro ASP.NET MVC 4</span></strong><span style="color: #000000">&quot; pubblicato da </span><strong><span style="color: #000000">Apress, </span></strong><span style="color: #000000">sottolinea giustamente l&#x27;importanza di questi test. Nel suo libro se ne trovano molti esempi.</span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000"> </span></p>
+<p><strong>Adam Freeman,</strong> <span style="color: #000000">nel suo libro </span><strong>«Pro ASP.NET MVC</strong><span style="color: #000000"> 4», edito da </span><strong>Apress,</strong> sottolinea giustamente l’importanza di questi test. Nel suo libro se ne trovano moltissimi.</p>
 <p><span style="color: #000000">Serge Tahé, novembre 2013</span></p>
 
 

@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://stahe.github.io/it-aspnetmvc-nov-2013/controller-azioni-routing.html">
       
       
-        <link rel="prev" href="nozioni-di-base-sulla-programmazione-web.html">
+        <link rel="prev" href="le-basi-della-programmazione-web.html">
       
       
         <link rel="next" href="il-modello-di-unazione.html">
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="nozioni-di-base-sulla-programmazione-web.html" class="md-nav__link">
+      <a href="le-basi-della-programmazione-web.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Nozioni di base sulla programmazione web
+    2. Le basi della programmazione Web
   
 
     
@@ -428,10 +430,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#32-indirizzamento-url-predefinito" class="md-nav__link">
+  <a href="#32-il-routing-predefinito-di-url" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.2. Indirizzamento URL predefinito
+        3.2. Il routing predefinito di URL
       
     </span>
   </a>
@@ -461,10 +463,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#35-azione-con-un-risultato-di-tipo-contentresult-2" class="md-nav__link">
+  <a href="#35-azione-con-risultato-di-tipo-contentresult-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.5. Azione con un risultato di tipo [ContentResult] - 2
+        3.5. Azione con risultato di tipo [ContentResult] - 2
       
     </span>
   </a>
@@ -483,10 +485,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#37-azione-con-un-risultato-string" class="md-nav__link">
+  <a href="#37-azione-con-un-risultato-di-tipo-string" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.7. Azione con un risultato [string]
+        3.7. Azione con un risultato di tipo [string]
       
     </span>
   </a>
@@ -494,10 +496,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#38-azione-con-un-tipo-emptyresult" class="md-nav__link">
+  <a href="#38-azione-con-un-risultato-di-tipo-emptyresult" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.8. Azione con un tipo [EmptyResult]
+        3.8. Azione con un risultato di tipo [EmptyResult]
       
     </span>
   </a>
@@ -527,10 +529,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#311-azione-con-un-risultato-di-tipo-redirecttorouteresult" class="md-nav__link">
+  <a href="#311-azione-con-un-risultato-del-tipo-redirecttorouteresult" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.11. Azione con un risultato di tipo [RedirectToRouteResult]
+        3.11. Azione con un risultato del tipo [RedirectToRouteResult]
       
     </span>
   </a>
@@ -538,10 +540,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#312-azione-con-tipo-di-ritorno-void" class="md-nav__link">
+  <a href="#312-azione-con-un-risultato-di-tipo-void" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.12. Azione con tipo di ritorno [void]
+        3.12. Azione con un risultato di tipo [void]
       
     </span>
   </a>
@@ -571,10 +573,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#315-recupero-di-elementi-da-una-route" class="md-nav__link">
+  <a href="#315-recuperare-gli-elementi-di-un-percorso" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3.15. Recupero di elementi da una route
+        3.15. Recuperare gli elementi di un percorso
       
     </span>
   </a>
@@ -623,14 +625,14 @@
   
   
     <li class="md-nav__item">
-      <a href="la-vista-e-il-suo-modello.html" class="md-nav__link">
+      <a href="la-vista-e-il-relativo-modello.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. La vista e il suo modello
+    5. La vista e il relativo modello
   
 
     
@@ -677,14 +679,14 @@
   
   
     <li class="md-nav__item">
-      <a href="ajaxificare-unapplicazione-aspnet-mvc.html" class="md-nav__link">
+      <a href="ajaxificazione-di-unapplicazione-aspnet-mvc.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    7. Ajaxificare un'applicazione ASP.NET MVC
+    7. Ajaxificazione di un’applicazione ASP.NET MVC
   
 
     
@@ -825,32 +827,32 @@
   
 
 
-<p><a id="refheading58022676630786"></a></p>
+<p><span id="refheading58022676630786" name="refheading58022676630786" class="odt-bookmark-anchor"></span></p>
 <h1 id="3-controller-azioni-routing">3. <span style="color: #365f91">Controller, azioni, routing</span></h1>
-<p>Consideriamo l&#x27;architettura di un&#x27;applicazione ASP.NET MVC:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000535000001A54D09B830.png" width="667" height="211" style="display:inline-block; margin:4px;width:17.635cm;height:5.57cm;" class="odt-zoomable" data-zoom-src="images/1000000000000535000001A54D09B830.png" /></td></tr></table>
+<p>Consideriamo l’architettura di un’applicazione ASP.NET MVC:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000535000001A54D09B830.png" width="667" height="211" style="display:inline-block; margin:4px;width:17.635cm;height:5.57cm;" class="odt-zoomable" data-zoom-src="images/1000000000000535000001A54D09B830.png" /></td></tr></table>
 
-<p>In questo capitolo, esaminiamo il processo che instrada la richiesta [1] al controller e all&#x27;azione [2a] che la elaborerà, un meccanismo noto come routing. Presentiamo inoltre le varie risposte [3] che un&#x27;azione può restituire al browser. Queste possono essere diverse da una vista <strong>V</strong> [4b].</p>
-<p><a id="refheading10128914791633"></a></p>
+<p>In questo capitolo esaminiamo il processo che porta la richiesta [1] al controller e all’azione [2a] che la elaboreranno, un meccanismo chiamato instradamento. Presentiamo inoltre le diverse risposte [3] che un&#x27;azione può fornire al browser. Può trattarsi di qualcosa di diverso da una vista <strong>V</strong> [4b].</p>
+<p><span id="refheading10128914791633" name="refheading10128914791633" class="odt-bookmark-anchor"></span></p>
 <h2 id="31-la-struttura-di-un-progetto-aspnet-mvc">3.1. <span style="color: #4f81bd">La struttura di un progetto ASP.NET MVC</span></h2>
-<p>Creiamo il nostro primo progetto ASP.NET MVC utilizzando Visual Studio Express 2012. Lo aggiungeremo [1] alla soluzione utilizzata nel capitolo precedente:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005D80000021E8F8AD477.png" width="680" height="246" style="display:inline-block; margin:4px;width:17.999cm;height:6.521cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D80000021E8F8AD477.png" /></td></tr></table>
+<p>Creiamo un primo progetto ASP.NET MVC con Visual Studio Express 2012. Lo aggiungeremo [1] alla soluzione utilizzata nel capitolo precedente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005D80000021E8F8AD477.png" width="680" height="246" style="display:inline-block; margin:4px;width:17.999cm;height:6.519cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D80000021E8F8AD477.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000515000002D013AB9480.png" width="651" height="360" style="display:inline-block; margin:4px;width:17.212cm;height:9.525cm;" class="odt-zoomable" data-zoom-src="images/1000000000000515000002D013AB9480.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000515000002D013AB9480.png" width="651" height="360" style="display:inline-block; margin:4px;width:17.212cm;height:9.525cm;" class="odt-zoomable" data-zoom-src="images/1000000000000515000002D013AB9480.png" /></td></tr></table>
 
 <ul>
   <li>in [2], il nome del nuovo progetto;
   </li>
-  <li>in [3, 4], scegliamo un progetto ASP.NET MVC di base. Questo modello ci fornisce un&#x27;applicazione web vuota che include comunque tutte le risorse (DLL, librerie JavaScript, ecc.) necessarie per iniziare.
+  <li>in [3, 4], scegliamo un progetto di base ASP.NET MVC. Questo modello ci fornisce un&#x27;applicazione web vuota, ma con tutte le risorse (DLL, librerie JavaScript, ...) necessarie per lavorare.
   </li>
 </ul>
 
-<p>Il progetto risultante è mostrato in [5]. Lo imposteremo [6] come progetto iniziale della soluzione (<a id="projet-de-demarrage"></a> ):</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000356000003396474F365.png" width="427" height="412" style="display:inline-block; margin:4px;width:11.298cm;height:10.913cm;" class="odt-zoomable" data-zoom-src="images/1000000000000356000003396474F365.png" /></td></tr></table>
+<p>Il progetto risultante è illustrato in [5]. Lo useremo come<span id="projet-de-demarrage" name="projet-de-demarrage" class="odt-bookmark-anchor"></span> progetto di avvio della soluzione:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000356000003396474F365.png" width="427" height="413" style="display:inline-block; margin:4px;width:11.298cm;height:10.915cm;" class="odt-zoomable" data-zoom-src="images/1000000000000356000003396474F365.png" /></td></tr></table>
 
-<p>Si notino i seguenti punti in [5]:</p>
+<p>Si notino in [5] i seguenti punti:</p>
 <ul>
-  <li>l&#x27;architettura del progetto riflette il suo modello MVC:
+  <li>l&#x27;architettura del progetto riflette il suo modello MVC: 
   </li>
   <li>i controller <b>C </b>saranno collocati nella cartella [Controllers],
   </li>
@@ -860,14 +862,14 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005A4000002293447BEB9.png" width="680" height="261" style="display:inline-block; margin:4px;width:17.999cm;height:6.893cm;" class="odt-zoomable" data-zoom-src="images/10000000000005A4000002293447BEB9.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005A4000002293447BEB9.png" width="680" height="261" style="display:inline-block; margin:4px;width:17.999cm;height:6.893cm;" class="odt-zoomable" data-zoom-src="images/10000000000005A4000002293447BEB9.png" /></td></tr></table>
 
 <ul>
-  <li>in [1], il file [Site.css] sarà il file CSS predefinito dell&#x27;applicazione;
+  <li>nella cartella [1], il file [Site.css] sarà il file predefinito dell&#x27;applicazione CSS;
   </li>
-  <li>in [2] sono disponibili diverse librerie JavaScript;
+  <li>in [2], sono disponibili diverse librerie JavaScript;
   </li>
-  <li>in [3], ci sono tre viste specifiche: <b>_ViewStart, _Layout ed Error</b>.
+  <li>in [3], si trovano tre viste specifiche: <b>_ViewStart, _Layout, Error</b>.
   </li>
 </ul>
 
@@ -878,17 +880,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> </span></p>
 <ul>
-  <li><span style="color: #000000">Riga 1: Il carattere @ indica l&#x27;inizio di un blocco C# all&#x27;interno della vista. Infatti, il codice C# può essere incluso in una vista;</span>
+  <li><span style="color: #000000">riga 1: il carattere @ indica una sequenza C# nella vista. Infatti, è possibile includere codice C# in una vista;</span>
   </li>
-  <li><span style="color: #000000">riga 2: definisce una variabile </span><i><span style="color: #000000">Layout </span></i><span style="color: #000000">che specifica la vista padre per tutte le viste. Corrisponde alla pagina master nel framework ASP.NET classico.</span>
+  <li><span style="color: #000000">riga 2: definisce una variabile </span><i><span style="color: #000000">Layout </span></i><span style="color: #000000">che identifica la vista padre di tutte le altre viste. Corrisponde alla pagina master del framework ASP.NET classico.</span>
   </li>
 </ul>
 
-<p><span style="color: #000000"> </span></p>
-<p>Il file [<a id="layout"></a> _Layout ] è il seguente:</p>
-<p><span style="color: #000000"> </span></p>
+<p>Il file [_Layout]<span id="layout" name="layout" class="odt-bookmark-anchor"></span> è il seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;!</span><span style="color:#800000">DOCTYPE</span><span style="color:#000000"> </span><span style="color:#ff0000">html</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">html</span><span style="color:#0000ff">&gt;</span></span></span>
@@ -901,16 +900,14 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">head</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">body</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    @RenderBody()</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    @</span><span style="color:#2b91af">Scripts</span><span style="color:#000000">.Render(</span><span style="color:#a31515">&quot;~/bundles/jquery&quot;</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    @RenderSection(</span><span style="color:#a31515">&quot;scripts&quot;</span><span style="color:#000000">, required: </span><span style="color:#0000ff">false</span><span style="color:#000000">)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">body</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">html</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Quando viene visualizzata una vista dalla cartella [Views], il suo corpo verrà visualizzato dalla riga 11 sopra. Ciò significa che la vista non deve includere i tag &lt;html&gt;, &lt;head&gt; e &lt;body&gt;. Questi sono forniti dal file sopra. Per ora, questo file è piuttosto criptico. Semplifichiamolo:</span></p>
-<p><span style="color: #000000"> </span></p>
+<p><span style="color: #000000">Quando verrà visualizzata una vista della cartella [Views], il suo corpo verrà generato dalla riga 11 sopra riportata. Ciò significa che la vista non deve includere i tag &lt;html&gt;, &lt;head&gt;, &lt;body&gt;. Questi sono forniti dal file sopra indicato. Al momento, tale file risulta piuttosto complesso. Semplifichiamolo:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;!</span><span style="color:#800000">DOCTYPE</span><span style="color:#000000"> </span><span style="color:#ff0000">html</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">html</span><span style="color:#0000ff">&gt;</span></span></span>
@@ -926,7 +923,6 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">html</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> </span></p>
 <ul>
   <li><span style="color: #000000">riga 6: il titolo comune a tutte le viste;</span>
   </li>
@@ -936,25 +932,24 @@
   </li>
 </ul>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">   </span></p>
-<p><img src="images/10000000000000960000003AABB03712.png" width="150" height="58" style="width:3.971cm;height:1.535cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000960000003AABB03712.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000960000003AABB03712.png" width="150" height="58" style="display:inline-block; margin:4px;width:3.971cm;height:1.529cm;" class="odt-zoomable" data-zoom-src="images/10000000000000960000003AABB03712.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
 <ul>
-  <li><span style="color: #000000">[Web.config] è il file di configurazione dell&#x27;applicazione web. È complesso. Dovrai modificarlo quando utilizzi il framework [Spring.net] in un&#x27;architettura multilivello.</span>
+  <li><span style="color: #000000">[Web.config] è il file di configurazione dell&#x27;applicazione web. È complesso. Sarà necessario modificarlo quando si utilizzerà il framework [Spring.net] in un&#x27;architettura a più livelli.</span>
   </li>
-  <li><span style="color: #000000">[Global.asax] contiene il codice eseguito all&#x27;avvio dell&#x27;applicazione. Generalmente, questo codice utilizza i vari file di configurazione dell&#x27;applicazione, incluso [Web.config].</span>
+  <li><span style="color: #000000">[Global.asax] contiene il codice eseguito all’avvio dell’applicazione. In generale, questo codice utilizza i vari file di configurazione dell’applicazione, tra cui [Web.config].</span>
   </li>
 </ul>
-<p><a id="refheading58024676630786"></a></p>
-<h2 id="32-indirizzamento-url-predefinito">3.2. <span style="color: #4f81bd">Indirizzamento URL predefinito</span></h2>
-<p><span style="color: #000000">Il codice in [Global.asax] è attualmente il seguente:</span></p>
-<p><span style="color: #000000"> </span></p>
+
+<p><span id="refheading58024676630786" name="refheading58024676630786" class="odt-bookmark-anchor"></span></p>
+<h2 id="32-il-routing-predefinito-di-url">3.2. <span style="color: #000000">Il routing predefinito di URL</span></h2>
+<p><span style="color: #000000">Il codice di [Global.asax] è attualmente il seguente:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Http;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Mvc;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Optimization;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Routing;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -968,30 +963,22 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> </span></p>
 <ul>
-  <li><span style="color: #000000">Riga 6: lo </span><i><span style="color: #000000">spazio dei nomi</span></i><span style="color: #000000"> della classe. Deriva direttamente dal nome del progetto ed è elencato nelle proprietà del progetto:</span>
+  <li><span style="color: #000000">riga 6, il </span><i><span style="color: #000000">namespace </span></i><span style="color: #000000">della classe. Deriva direttamente dal nome del progetto ed è presente nelle proprietà del progetto:</span>
   </li>
 </ul>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000"> </span></p>
-<p><img src="images/100000000000021E0000026DA93E2986.png" width="379" height="435" style="width:10.04cm;height:11.502cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021E0000026DA93E2986.png" /></p>
-<p><span style="color: #000000"> </span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004210000006F383712A7.png" width="529" height="56" style="display:inline-block; margin:4px;width:13.984cm;height:1.469cm;" class="odt-zoomable" data-zoom-src="images/10000000000004210000006F383712A7.png" /></td></tr></table>
+<p><img src="images/100000000000021E0000026DA93E2986.png" width="379" height="435" style="width:10.04cm;height:11.501cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000021E0000026DA93E2986.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000004210000006F383712A7.png" width="529" height="56" style="display:inline-block; margin:4px;width:13.984cm;height:1.469cm;" class="odt-zoomable" data-zoom-src="images/10000000000004210000006F383712A7.png" /></td></tr></table>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Impostiamo [1] come spazio dei nomi predefinito. Verrà quindi utilizzato per impostazione predefinita per tutte le classi che verranno create nel progetto.</span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Torniamo al codice in [Global.asax]:</span></p>
-<p><span style="color: #000000"> </span></p>
+<p><span style="color: #000000">Si imposta [1] come spazio dei nomi predefinito. Verrà quindi utilizzato per impostazione predefinita per tutte le classi che verranno create nel progetto.</span></p>
+<p><span style="color: #000000">Torniamo al codice di [Global.asax]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Http;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Mvc;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Optimization;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Routing;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
@@ -1005,22 +992,19 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> </span></p>
 <ul>
   <li><span style="color: #000000">riga 9: la classe [MvcApplication] deriva dalla classe [HttpApplication]. Il nome [MvcApplication] può essere modificato;</span>
   </li>
-  <li><span style="color: #000000">riga 11: il metodo [Application_Start] è il metodo eseguito all&#x27;avvio dell&#x27;applicazione web. Viene eseguito una sola volta. È qui che l&#x27;applicazione viene inizializzata.</span>
+  <li><span style="color: #000000">riga 11: il metodo [Application_Start] è il metodo eseguito all&#x27;avvio dell&#x27;applicazione web. Viene eseguito una sola volta. È qui che si inizializza l&#x27;applicazione.</span>
   </li>
 </ul>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Il codice per [Application_Start] è attualmente il seguente:</span></p>
-<p><span style="color: #000000"> </span></p>
+<p><span style="color: #000000">Il codice di [Application_Start] è attualmente il seguente:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">protected</span><span style="color:#000000"> </span><span style="color:#0000ff">void</span><span style="color:#000000"> Application_Start()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#2b91af">AreaRegistration</span><span style="color:#000000">.RegisterAllAreas();</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#2b91af">WebApiConfig</span><span style="color:#000000">.Register(</span><span style="color:#2b91af">GlobalConfiguration</span><span style="color:#000000">.Configuration);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#2b91af">FilterConfig</span><span style="color:#000000">.RegisterGlobalFilters(</span><span style="color:#2b91af">GlobalFilters</span><span style="color:#000000">.Filters);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#2b91af">RouteConfig</span><span style="color:#000000">.RegisterRoutes(</span><span style="color:#2b91af">RouteTable</span><span style="color:#000000">.Routes);</span></span></span>
@@ -1028,23 +1012,17 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Per ora non è necessario comprendere tutto questo codice. Le righe 5–8 definiscono i percorsi accettati dall&#x27;applicazione web. Torniamo all&#x27;architettura di un&#x27;applicazione ASP.NET MVC:</span></p>
-<p><span style="color: #000000"> </span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000546000001A892AB2DCF.png" width="675" height="212" style="display:inline-block; margin:4px;width:17.859cm;height:5.609cm;" class="odt-zoomable" data-zoom-src="images/1000000000000546000001A892AB2DCF.png" /></td></tr></table>
+<p><span style="color: #000000">Per il momento non è necessario comprendere il codice nella sua interezza. Le righe 5-8 definiscono i percorsi accettati dall’applicazione web. Torniamo all’architettura di un’applicazione ASP.NET MVC:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000546000001A892AB2DCF.png" width="675" height="212" style="display:inline-block; margin:4px;width:17.859cm;height:5.609cm;" class="odt-zoomable" data-zoom-src="images/1000000000000546000001A892AB2DCF.png" /></td></tr></table>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Abbiamo spiegato che il [Front Controller] deve instradare un URL all&#x27;azione responsabile della sua gestione. Un percorso viene utilizzato per collegare un modello di URL a un&#x27;azione. Questi percorsi sono definiti nella cartella [App_Start] del progetto dalle classi [WebApiConfig, FilterConfig, RouteConfig, BundleConfig]:</span></p>
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">  </span></p>
-<p><img src="images/10000000000000A90000005B0B6C09C4.png" width="118" height="64" style="width:3.129cm;height:1.685cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000A90000005B0B6C09C4.png" /></p>
-<p><span style="color: #000000">Per ora, ci interessa solo la classe [RouteConfig]:</span></p>
-<p><span style="color: #000000"> </span></p>
+<p><span style="color: #000000">Abbiamo spiegato che il [Front Controller] deve instradare un URL verso l’azione incaricata di elaborarlo. Una route serve a collegare un modello di tipo URL a un&#x27;azione. Queste route sono definite nella cartella [App_Start] del progetto tramite le classi [WebApiConfig, FilterConfig, RouteConfig, BundleConfig]:</span></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000A90000005B0B6C09C4.png" width="118" height="63" style="display:inline-block; margin:4px;width:3.129cm;height:1.679cm;" class="odt-zoomable" data-zoom-src="images/10000000000000A90000005B0B6C09C4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p><span style="color: #000000">Per il momento ci interessa solo la classe [RouteConfig]:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Mvc;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Routing;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">class</span><span style="color:#000000"> </span><span style="color:#2b91af">RouteConfig</span></span></span>
@@ -1052,7 +1030,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">static</span><span style="color:#000000"> </span><span style="color:#0000ff">void</span><span style="color:#000000"> RegisterRoutes(</span><span style="color:#2b91af">RouteCollection</span><span style="color:#000000"> routes)</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      routes.IgnoreRoute(</span><span style="color:#a31515">&quot;{resource}.axd/{*pathInfo}&quot;</span><span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      routes.MapRoute(</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          name: </span><span style="color:#a31515">&quot;Default&quot;</span><span style="color:#000000">,</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          url: </span><span style="color:#a31515">&quot;{controller}/{action}/{id}&quot;</span><span style="color:#000000">,</span></span></span>
@@ -1063,17 +1041,15 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">Le righe 12–16 definiscono il formato degli URL accettati dall&#x27;applicazione. Questo è chiamato </span><strong><span style="color: #000000">percorso</span></strong><span style="color: #000000">. Possono esserci più percorsi possibili (= più modelli di URL possibili). Si distinguono l&#x27;uno dall&#x27;altro per il loro nome (riga 13). Il formato degli URL del percorso è definito alla riga 14. Qui, l&#x27;URL avrà tre componenti:</span></p>
-<p><span style="color: #000000"> </span></p>
+<p><span style="color: #000000">Le righe 12-16 definiscono il formato dei file URL accettati dall&#x27;applicazione. Questo viene chiamato &quot;</span><strong><span style="color: #000000">percorso&quot;</span></strong><span style="color: #000000">. Possono esserci diversi percorsi possibili (= diversi modelli di file URL possibili). Si distinguono tra loro per il nome (riga 13). Il formato dei URL del percorso è definito alla riga 14. In questo caso, il URL avrà tre componenti:</span></p>
 <ul>
-  <li><b><span style="color: #000000">{controller}</span></b><span style="color: #000000">: il nome di una classe derivata da [Controller]. Verrà cercata nella cartella [Controllers] del progetto. Per convenzione, se l&#x27;URL è /X/Y/Z, il controller responsabile della gestione di questo URL sarà la classe </span><b><span style="color: #000000">XController</span></b><span style="color: #000000">. Il suffisso </span><b><span style="color: #000000">Controller </span></b><span style="color: #000000">viene aggiunto al nome del controller presente nell&#x27;URL;</span>
+  <li><b><span style="color: #000000">{controller}</span></b><span style="color: #000000">: il nome di una classe derivata da [Controller]. Verrà cercata nella cartella [Controllers] del progetto. Per convenzione, se URL è /X/Y/Z, il controller incaricato di gestire questo URL sarà la classe </span><b><span style="color: #000000">XController</span></b><span style="color: #000000">. Il suffisso </span><b><span style="color: #000000">Controller </span></b><span style="color: #000000">viene aggiunto al nome del controller presente nel URL;</span>
   </li>
-  <li><span style="color: #000000">{</span><b><span style="color: #000000">action</span></b><span style="color: #000000">}: il nome di un metodo nel controller specificato sopra. Questo metodo riceverà i parametri che accompagnano l&#x27;URL e li elaborerà. Questo metodo può restituire vari risultati:</span>
+  <li><span style="color: #000000">{</span><b><span style="color: #000000">action</span></b><span style="color: #000000">}: il nome di un metodo nel controller sopra indicato. È questo metodo che riceverà i parametri associati all’URL e che li elaborerà. Questo metodo può restituire diversi risultati:</span>
     <ul>
-      <li><b><span style="color: #000000">void</span></b><span style="color: #000000">: l&#x27;azione costruirà la risposta al browser del cliente</span>
+      <li><b><span style="color: #000000">void</span></b><span style="color: #000000">: l’azione costruirà autonomamente la risposta al browser del cliente</span>
       </li>
-      <li><b><span style="color: #000000">String</span></b><span style="color: #000000">: l&#x27;azione restituisce una stringa al client;</span>
+      <li><b><span style="color: #000000">String</span></b><span style="color: #000000">: l’azione restituisce al client una stringa di caratteri;</span>
       </li>
       <li><b><span style="color: #000000">ViewResult</span></b><span style="color: #000000">: restituisce una vista al client;</span>
       </li>
@@ -1081,93 +1057,93 @@
       </li>
       <li><b><span style="color: #000000">EmptyResult</span></b><span style="color: #000000">: al client viene inviata una risposta vuota;</span>
       </li>
-      <li><b><span style="color: #000000">RedirectResult</span></b><span style="color: #000000">: indica al client di reindirizzarsi a un URL</span>
+      <li><b><span style="color: #000000">RedirectResult</span></b><span style="color: #000000">: richiede al client di reindirizzarsi a una URL</span>
       </li>
-      <li><b><span style="color: #000000">RedirectToRouteResult</span></b><span style="color: #000000">: come sopra, ma l&#x27;URL viene costruito a partire dai percorsi dell&#x27;applicazione;</span>
+      <li><b><span style="color: #000000">RedirectToRouteResult</span></b><span style="color: #000000">: come sopra, ma l’URL è costruita a partire dai percorsi dell’applicazione;</span>
       </li>
       <li><b><span style="color: #000000">JsonResult</span></b><span style="color: #000000">: invia una risposta JSON</span>
       </li>
-      <li><b><span style="color: #000000">JavaScriptResult</span></b><span style="color: #000000">: restituisce codice JavaScript al client;</span>
+      <li><b><span style="color: #000000">JavaScriptResult</span></b><span style="color: #000000">: restituisce un codice JavaScript al client;</span>
       </li>
       <li><b><span style="color: #000000">ContentResult</span></b><span style="color: #000000">: restituisce un flusso HTML al client senza passare attraverso una vista;</span>
       </li>
       <li><b><span style="color: #000000">FileContentResult</span></b><span style="color: #000000">: restituisce un file al client;</span>
       </li>
-      <li><b><span style="color: #000000">FileStreamResult</span></b><span style="color: #000000">: come sopra, ma tramite un metodo diverso;</span>
+      <li><b><span style="color: #000000">FileStreamResult</span></b><span style="color: #000000">: come sopra, ma tramite un altro canale;</span>
       </li>
       <li><b><span style="color: #000000">FilePathResult</span></b><span style="color: #000000">: ...</span>
       </li>
     </ul>
   </li>
-  <li><b><span style="color: #000000">{id}</span></b><span style="color: #000000">: un parametro che verrà passato all&#x27;azione. Affinché funzioni, l&#x27;azione deve avere un parametro denominato </span><b><span style="color: #000000">id</span></b><span style="color: #000000">.</span>
+  <li><b><span style="color: #000000">{id}</span></b><span style="color: #000000">: un parametro che verrà trasmesso all&#x27;azione. A tal fine, l&#x27;azione dovrà avere un parametro denominato </span><b><span style="color: #000000">id</span></b><span style="color: #000000">.</span>
   </li>
 </ul>
 
-<p><span style="color: #000000"> </span></p>
-<p><span style="color: #000000">La riga 15 definisce i valori predefiniti quando l&#x27;URL non ha il formato previsto </span><span style="color: #a31515">/{controller}/{action}/{id}. </span>Indica inoltre che il parametro <strong>{id}</strong> nell&#x27;URL è facoltativo. Ecco un elenco di URL incompleti e l&#x27;URL completato con i valori predefiniti:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>URL originale</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>URL completato</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Home/Index</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Fare</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Fare/Indice</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Fare/Qualcosa</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Fare/Qualcosa</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Fare/Qualcosa/4</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Fare/Qualcosa/4</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">/Fai/Qualcosa/x/y/z</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">URL non instradato</div></td></tr></table>
+<p><span style="color: #000000">La riga 15 definisce i valori predefiniti quando l&#x27;URL non ha la forma prevista </span><span style="color: #a31515">/{controller}/{action}/{id}. </span>Indica inoltre che il parametro <strong>{id}</strong> nell&#x27;URL è facoltativo. Ecco un elenco di URL incomplete e la URL completata con i valori predefiniti:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>URL originale</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>URL completato</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Home/Index</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Do</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Do/Indice</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Do/Something</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Fai/Qualcosa</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Fai/Qualcosa/4</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Fai/Qualcosa/4</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">/Fai/Qualcosa/x/y/z</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">URL non instradata</div></td></tr></table>
 
-<p><a id="refheading58026676630786"></a></p>
+<p><span id="refheading58026676630786" name="refheading58026676630786" class="odt-bookmark-anchor"></span></p>
 <h2 id="33-creazione-di-un-controller-e-di-una-prima-azione">3.3. <span style="color: #4f81bd">Creazione di un controller e di una prima azione</span></h2>
 <p>Creiamo un primo controller:</p>
-<p><img src="images/1000000000000359000000A19E6EE445.png" width="544" height="102" style="width:14.392cm;height:2.704cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000359000000A19E6EE445.png" /></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000368000001382C98CD67.png" width="436" height="156" style="display:inline-block; margin:4px;width:11.536cm;height:4.128cm;" class="odt-zoomable" data-zoom-src="images/1000000000000368000001382C98CD67.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000359000000A19E6EE445.png" width="544" height="102" style="display:inline-block; margin:4px;width:14.392cm;height:2.704cm;" class="odt-zoomable" data-zoom-src="images/1000000000000359000000A19E6EE445.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/1000000000000368000001382C98CD67.png" width="436" height="156" style="display:inline-block; margin:4px;width:11.536cm;height:4.128cm;" class="odt-zoomable" data-zoom-src="images/1000000000000368000001382C98CD67.png" /></td></tr></table>
 
 <ul>
-  <li>In [1], inserisci il nome del controller con il suffisso [Controller];
+  <li>in [1], assegnate il nome del controller con il suo suffisso [Controller];
   </li>
-  <li>in [2], creare un controller MVC vuoto;
+  <li>in [2], create un controller vuoto MVC;
   </li>
   <li>in [3], è stato creato.
   </li>
 </ul>
 
-<p>Il codice per [FirstController] è il seguente:</p>
+<p>Il codice di [FirstController] è il seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Collections.Generic;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Linq;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Mvc;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01.Controllers</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">class</span><span style="color:#000000"> </span><span style="color:#2b91af">FirstController</span><span style="color:#000000"> : </span><span style="color:#2b91af">Controller</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">//</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        <span style="color:#000000">// GET: /First/</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ActionResult</span><span style="color:#000000"> Index()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#0000ff">return</span><span style="color:#000000"> View();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">        }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
-  <li>riga 7: è stato generato uno <i>spazio dei nomi</i> predefinito;
+  <li>riga 7: è stato generato un <i>namespace </i>predefinito;
   </li>
   <li>riga 9: la classe [FirstController] deriva dalla classe [System.Web.Mvc.Controller];
   </li>
-  <li>righe 14–17: è stata generata un&#x27;azione [Index] per impostazione predefinita. È <b>pubblica</b>. Questo è importante; altrimenti, non verrà trovata. Restituisce un tipo [ActionResult], che è una classe astratta da cui derivano la maggior parte dei risultati tipicamente restituiti da un&#x27;azione. Si tratta di un tipo &quot;catch-all&quot; che può essere specificato sostituendolo con il nome effettivo del tipo restituito;
+  <li>righe 14-17: è stata generata per impostazione predefinita un&#x27;azione [Index]. È <b>pubblica</b>. Questo è importante, altrimenti non verrà trovata. Restituisce un tipo [ActionResult], che è una classe astratta da cui derivano la maggior parte dei risultati che un&#x27;azione restituisce abitualmente. Si tratta di un tipo “generico” che è possibile specificare sostituendolo con il nome effettivo del tipo restituito;
   </li>
-  <li>Riga 16: il metodo non fa nulla. Restituisce semplicemente una vista, ovvero un tipo [ViewResult]. Il nome della vista non è specificato. In questo caso, il framework cerca nella cartella [Views/First] una vista con lo stesso nome dell&#x27;azione, che in questo caso è [Index.cshtml].
+  <li>riga 16: il metodo non esegue alcuna operazione. Si limita a restituire una vista, quindi un tipo [ViewResult]. Il nome della vista non è specificato. In questo caso, il framework cerca nella cartella [Views / First] una vista che porti il nome dell’azione, quindi in questo caso: [Index.cshtml].
   </li>
 </ul>
 
 <p>Creiamo la vista [Index.cshtml]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005820000026E4E43F847.png" width="680" height="300" style="display:inline-block; margin:4px;width:17.999cm;height:7.939cm;" class="odt-zoomable" data-zoom-src="images/10000000000005820000026E4E43F847.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005820000026E4E43F847.png" width="680" height="300" style="display:inline-block; margin:4px;width:17.999cm;height:7.939cm;" class="odt-zoomable" data-zoom-src="images/10000000000005820000026E4E43F847.png" /></td></tr></table>
 
 <ul>
-  <li>in [1], fare clic con il pulsante destro del mouse sul codice dell&#x27;azione e selezionare l&#x27;opzione [Aggiungi vista];
+  <li>in [1], si fa clic con il tasto destro del mouse sul codice dell’azione e si seleziona l’opzione [Ajouter une vue];
   </li>
-  <li>in [2], la procedura guidata suggerisce una vista con lo stesso nome dell&#x27;azione. È proprio quello che vogliamo in questo caso;
+  <li>in [2], l’assistente propone una vista con il nome dell’azione. È proprio quello che vogliamo in questo caso;
   </li>
-  <li>in [3], per impostazione predefinita, viene suggerito l&#x27;uso della pagina master [_Layout.cshtml];
+  <li>in [3], per impostazione predefinita viene proposto l’utilizzo della pagina master [_Layout.cshtml];
   </li>
-  <li>in [4], una volta confermata, la procedura guidata crea la vista in una sottocartella della cartella [Views] che prende il nome dal controller (First).
+  <li>in [4], una volta confermata, l’assistente crea la vista in una sottocartella della cartella [Views] che porta il nome del controller (First).
   </li>
 </ul>
 
@@ -1176,52 +1152,53 @@
 <span class="odt-code-line"><span class="odt-code-line-content">@{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    ViewBag.Title = </span><span style="color:#a31515">&quot;Index&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">h2</span><span style="color:#0000ff">&gt;</span><span style="color:#000000">Index</span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">h2</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
 <ul>
-  <li>Righe 1–3: codice C# che definisce una variabile;
+  <li>righe 1-3: codice C# che definisce una variabile;
   </li>
   <li>riga 5: un tag HTML.
   </li>
 </ul>
 
-<p>Sostituisci tutto il codice precedente con questo:</p>
+<p>Si sostituisce tutto il codice precedente con questo:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">strong</span><span style="color:#0000ff">&gt;</span><span style="color:#000000">Vue [Index]...</span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">strong</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p>Riassumendo:</p>
+<p>Riassumiamo:</p>
 <ul>
-  <li>abbiamo un controller <b>C# </b>chiamato [First];
+  <li>abbiamo un controller <b>C </b>denominato [First];
   </li>
-  <li>abbiamo un&#x27;azione chiamata [Index] che richiede la visualizzazione di una vista chiamata [Index];
+  <li>abbiamo un&#x27;azione denominata [Index] che richiede la visualizzazione di una vista denominata [Index];
   </li>
   <li>abbiamo la vista <b>V </b>[Index].
   </li>
 </ul>
 
-<p>Possiamo chiamare l&#x27;azione [Index] in due modi:</p>
+<p>Possiamo richiamare l’azione [Index] in due modi:</p>
 <ul>
   <li>/First/Index;
   </li>
-  <li>/First, poiché [Index] è anche l&#x27;azione predefinita nelle rotte.
+  <li>/First, poiché [Index] è anche l’azione predefinita nelle route.
   </li>
 </ul>
 
 <p>Eseguiamo l&#x27;applicazione (CTRL-F5). Otteniamo la seguente pagina:</p>
-<p><img src="images/10000000000001EB00000112B2039E6A.png" width="344" height="192" style="width:9.089cm;height:5.071cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EB00000112B2039E6A.png" /></p>
-<p>In [1], l&#x27;URL richiesto era <strong>http://localhost:49302</strong>. Manca il percorso. Sappiamo che il nostro router si aspetta URL nella forma <strong>/{controller}/{action}/{id}.</strong> Poiché questi elementi mancano, vengono utilizzati i valori predefiniti. L&#x27;URL diventa <strong>http://localhost:49302/Home/Index</strong>. Il controller [Home] non esiste. Pertanto, l&#x27;URL viene rifiutato.</p>
-<p>Ora proviamo l&#x27;URL <strong>http://localhost:49302/First/Index</strong> digitandolo direttamente nel browser:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000028400000136A17562B6.png" width="322" height="155" style="display:inline-block; margin:4px;width:8.52cm;height:4.101cm;" class="odt-zoomable" data-zoom-src="images/100000000000028400000136A17562B6.png" /></td></tr></table>
+<p>1</p>
+<p><img src="images/10000000000001EB00000112B2039E6A.png" width="344" height="192" style="width:9.089cm;height:5.069cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001EB00000112B2039E6A.png" /></p>
+<p>In [1], l’azione richiesta era <strong>http://localhost:49302</strong>. Non è presente alcun percorso. Sappiamo che il nostro router si aspetta azioni della forma <strong>/{controller}/{action}/{id}.</strong> Poiché questi elementi sono assenti, vengono utilizzati i valori predefiniti. La richiesta URL diventa <strong>http://localhost:49302/Home/Index</strong>. Il controller [Home] non esiste. Pertanto, la richiesta URL viene respinta.</p>
+<p>Proviamo ora con URL <strong>http://localhost:49302/First/Index</strong> digitandolo direttamente nel browser:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000028400000136A17562B6.png" width="322" height="155" style="display:inline-block; margin:4px;width:8.52cm;height:4.101cm;" class="odt-zoomable" data-zoom-src="images/100000000000028400000136A17562B6.png" /></td></tr></table>
 
-<p>La pagina sopra è stata generata dall&#x27;azione [Index] del controller [First]. La pagina generata da questa azione è la vista [Index], il cui codice era il seguente:</p>
+<p>La pagina sopra riportata è stata generata dall’azione [Index] del controller [First]. La pagina generata da questa azione è la vista [Index], il cui codice era il seguente:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">strong</span><span style="color:#0000ff">&gt;</span><span style="color:#000000">Vue [Index]...</span><span style="color:#0000ff">&lt;/</span><span style="color:#800000">strong</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p>Genera la parte [1]. La parte [2], invece, proviene dalla pagina master [_Layout] che abbiamo definito in precedenza:</p>
+<p>Essa genera la parte [1]. La parte [2], invece, proviene dalla pagina master [_Layout] che abbiamo definito poco fa:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;!</span><span style="color:#800000">DOCTYPE</span><span style="color:#000000"> </span><span style="color:#ff0000">html</span><span style="color:#0000ff">&gt;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;</span><span style="color:#800000">html</span><span style="color:#0000ff">&gt;</span></span></span>
@@ -1237,8 +1214,8 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">&lt;/</span><span style="color:#800000">html</span><span style="color:#0000ff">&gt;</span></span></span>
 </code></pre></div>
 
-<p>La riga 9 ha generato la sezione [2] della pagina. La vista [Index], tuttavia, appare solo alla riga 10.</p>
-<p>Se visualizziamo il codice sorgente della pagina ricevuta, possiamo vedere che la pagina [Index] è effettivamente inclusa (riga 10 qui sotto) nella pagina [Layout]:</p>
+<p>La riga 9 ha generato la parte [2] della pagina. La vista [Index] interviene invece solo alla riga 10.</p>
+<p>Se visualizziamo il codice sorgente della pagina ricevuta, troviamo effettivamente la pagina [Index] inclusa (riga 10 qui sotto) nella pagina [Layout]:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
@@ -1263,26 +1240,27 @@
 <a id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div>
-<p>Ora proviamo l&#x27;URL [/First]:</p>
-<p><img src="images/10000000000001270000009D2838ADF6.png" width="206" height="110" style="width:5.459cm;height:2.905cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001270000009D2838ADF6.png" /></p>
-<p>L&#x27;URL [/First] era incompleto. È stato completato con i valori predefiniti del percorso ed è diventato [/First/Index]. Otteniamo quindi lo stesso risultato di prima.</p>
-<p><a id="refheading58028676630786"></a></p>
+<p>Proviamo ora con URL e [/First]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001270000009D2838ADF6.png" width="206" height="110" style="display:inline-block; margin:4px;width:5.459cm;height:2.91cm;" class="odt-zoomable" data-zoom-src="images/10000000000001270000009D2838ADF6.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Il file URL [/First] era incompleto. È stato completato con i valori predefiniti del percorso ed è diventato [/First/Index]. Si ottiene quindi lo stesso risultato di prima.</p>
+<p><span id="refheading58028676630786" name="refheading58028676630786" class="odt-bookmark-anchor"></span></p>
 <h2 id="34-azione-con-un-risultato-di-tipo-contentresult-1">3.4. <span style="color: #4f81bd">Azione con un risultato di tipo [ContentResult] - 1</span></h2>
 <p>Creiamo una nuova azione nel controller [First]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Text;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Mvc;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01.Controllers</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">class</span><span style="color:#000000"> </span><span style="color:#2b91af">FirstController</span><span style="color:#000000"> : </span><span style="color:#2b91af">Controller</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Index</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Indice</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ViewResult</span><span style="color:#000000"> Index()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> View();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action01</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione01</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ContentResult</span><span style="color:#000000"> Action01()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> Content(</span><span style="color:#a31515">&quot;&lt;h1&gt;Action [Action01]&lt;/h1&gt;&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;text/plain&quot;</span><span style="color:#000000">, </span><span style="color:#2b91af">Encoding</span><span style="color:#000000">.UTF8);</span></span></span>
@@ -1291,24 +1269,25 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>La nuova azione è definita nelle righe 14–18. Restituisce semplicemente una stringa utilizzando il metodo [Content] (riga 16) della classe [Controller] (riga 6). I parametri del metodo sono:</p>
+<p>La nuova azione è definita alle righe 14-18. Si limita a restituire una stringa di caratteri utilizzando il metodo [Content] (riga 16) della classe [Controller] (riga 6). I parametri del metodo sono:</p>
 <ol>
-  <li>la stringa di risposta;
+  <li>la stringa di caratteri della risposta;
   </li>
-  <li>un indicatore del tipo di testo inviato: &quot;text/plain&quot;, &quot;text/html&quot;, &quot;text/xml&quot;, ecc. Questo indicatore è chiamato tipo MIME (<a href="http://fr.wikipedia.org/wiki/Type_MIME"><u><span style="color: #0563c1">http://fr.wikipedia.org/wiki/Type_MIME</span></u></a>);
+  <li>un indicatore della natura del testo inviato: &quot;text/plain&quot;, &quot;text/html&quot;, &quot;text/xml&quot;, ... Questo indicatore è denominato tipo MIME (<a href="http://fr.wikipedia.org/wiki/Type_MIME"><u><span style="color: #0563c1">http://fr.wikipedia.org/wiki/Type_MIME</span></u></a>);
   </li>
-  <li>il terzo parametro specifica il tipo di codifica utilizzato per il testo.
+  <li>il terzo parametro consente di specificare il tipo di codifica utilizzato per il testo.
   </li>
 </ol>
 
-<p>Anziché utilizzare il tipo astratto [ActionResult], i nostri metodi specificano il tipo di ritorno effettivo (righe 9 e 14).</p>
-<p>Richiediamo l&#x27;URL [/First/Action01]. Otteniamo la seguente pagina:</p>
-<p><img src="images/10000000000001680000007B99162A37.png" width="252" height="86" style="width:6.669cm;height:2.279cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001680000007B99162A37.png" /></p>
-<p>Diamo un&#x27;occhiata al codice sorgente della pagina ricevuta:</p>
+<p>Anziché utilizzare il tipo astratto [ActionResult], i nostri metodi specificano il tipo effettivo restituito (righe 9 e 14). </p>
+<p>Richiediamo il URL [/First/Action01]. Si ottiene la seguente pagina:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001680000007B99162A37.png" width="252" height="86" style="display:inline-block; margin:4px;width:6.669cm;height:2.281cm;" class="odt-zoomable" data-zoom-src="images/10000000000001680000007B99162A37.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Diamo un’occhiata al codice sorgente della pagina ricevuta:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>&lt;h1&gt;Action [Action01]&lt;/h1&gt;
 </code></pre></div></td></tr></table></div>
-<p>Il browser ha ricevuto solo il testo inviato dall&#x27;azione e nient&#x27;altro. Questa modalità è utile quando si desidera richiedere dati grezzi dal server web senza il markup HTML circostante. Si noti che il browser non ha interpretato il tag HTML &lt;h1&gt;. Per capire perché, diamo un&#x27;occhiata agli scambi HTTP in Chrome:</p>
-<p>Il browser ha inviato le seguenti intestazioni HTTP:</p>
+<p>Il browser ha ricevuto solo il testo inviato dall’azione e nient’altro. Questa modalità è utile quando si desidera richiedere al server Web dati puri senza il contenitore HTML che li circonda. Si noti che, come illustrato sopra, il browser non ha interpretato il tag &lt;h1&gt;. Per capire il motivo, diamo un’occhiata agli scambi in Chrome:</p>
+<p>Il browser ha inviato le seguenti intestazioni:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
@@ -1320,7 +1299,7 @@
 <a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="n">Host</span><span class="p">:</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">49302</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">Connection</span><span class="p">:</span> <span class="n">keep</span><span class="o">-</span><span class="n">alive</span>
 <a id="__codelineno-2-4" name="__codelineno-2-4"></a><span class="n">Cache</span><span class="o">-</span><span class="n">Control</span><span class="p">:</span> <span class="nb">max</span><span class="o">-</span><span class="n">age</span><span class="o">=</span><span class="mi">0</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">Accept</span><span class="p">:</span> <span class="n">text</span><span class="o">/</span><span class="n">html</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xhtml</span><span class="o">+</span><span class="n">xml</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xml</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="o">*/*</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">Accept</span><span class="p">:</span> <span class="n">text</span><span class="o">/</span><span class="n">html</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xhtml</span><span class="o">+</span><span class="n">xml</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xml</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="o">*/*</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span>
 <a id="__codelineno-2-6" name="__codelineno-2-6"></a><span class="n">User</span><span class="o">-</span><span class="n">Agent</span><span class="p">:</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">Windows</span> <span class="n">NT</span> <span class="mf">6.2</span><span class="p">;</span> <span class="n">WOW64</span><span class="p">)</span> <span class="n">AppleWebKit</span><span class="o">/</span><span class="mf">537.36</span> <span class="p">(</span><span class="n">KHTML</span><span class="p">,</span> <span class="n">like</span> <span class="n">Gecko</span><span class="p">)</span> <span class="n">Chrome</span><span class="o">/</span><span class="mf">29.0.1547.76</span> <span class="n">Safari</span><span class="o">/</span><span class="mf">537.36</span>
 <a id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Encoding</span><span class="p">:</span> <span class="n">gzip</span><span class="p">,</span><span class="n">deflate</span><span class="p">,</span><span class="n">sdch</span>
 <a id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Language</span><span class="p">:</span> <span class="n">fr</span><span class="o">-</span><span class="n">FR</span><span class="p">,</span><span class="n">fr</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span><span class="n">en</span><span class="o">-</span><span class="n">US</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span><span class="n">en</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.4</span>
@@ -1351,22 +1330,23 @@
 <a id="__codelineno-3-12" name="__codelineno-3-12"></a>Content-Length: 141
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>Riga 3: imposta il tipo di documento. Vediamo gli attributi impostati nel metodo [Action01]. È perché al browser è stato comunicato che il documento era di tipo &quot;text/plain&quot; e non &quot;text/html&quot; che non ha interpretato il tag &lt;h1&gt; presente nel documento ricevuto.
+  <li>riga 3: definisce la natura del documento. Ritroviamo gli attributi impostati nel metodo [Action01]. È proprio perché gli è stato indicato che il documento era di tipo &quot;text/plain&quot; e non &quot;text/html&quot; che il browser non ha interpretato il tag &lt;h1&gt; presente nel documento ricevuto.
   </li>
 </ul>
-<p><a id="refheading58030676630786"></a></p>
-<h2 id="35-azione-con-un-risultato-di-tipo-contentresult-2">3.5. <span style="color: #4f81bd">Azione con un risultato di tipo [ContentResult] - 2</span></h2>
+
+<p><span id="refheading58030676630786" name="refheading58030676630786" class="odt-bookmark-anchor"></span></p>
+<h2 id="35-azione-con-risultato-di-tipo-contentresult-2">3.5. <span style="color: #4f81bd">Azione con risultato di tipo [ContentResult] - 2</span></h2>
 <p>Consideriamo la seguente terza azione:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Text;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Mvc;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01.Controllers</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">class</span><span style="color:#000000"> </span><span style="color:#2b91af">FirstController</span><span style="color:#000000"> : </span><span style="color:#2b91af">Controller</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">   ...</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action02</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione02</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ContentResult</span><span style="color:#000000"> Action02()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">string</span><span style="color:#000000"> data = </span><span style="color:#a31515">&quot;&lt;action&gt;&lt;name&gt;Action02&lt;/name&gt;&lt;description&gt;renvoie un texte XML&lt;/description&gt;&lt;/action&gt;&quot;</span><span style="color:#000000">;</span></span></span>
@@ -1377,15 +1357,16 @@
 </code></pre></div>
 
 <ul>
-  <li>riga 12: definiamo un testo XML;
+  <li>riga 12: si definisce un testo XML;
   </li>
-  <li>riga 13: lo inviamo al browser, specificando che si tratta di XML con il tipo MIME &quot;text/xml&quot;.
+  <li>riga 13: lo si invia al browser specificando che si tratta di XML con il tipo MIME &quot;text/xml&quot;.
   </li>
 </ul>
 
-<p>Nel browser, otteniamo la seguente pagina:</p>
-<p><img src="images/10000000000002BE000000B7B494D346.png" width="491" height="128" style="width:13cm;height:3.388cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002BE000000B7B494D346.png" /></p>
-<p>Diamo un&#x27;occhiata alla risposta HTTP del server in Chrome:</p>
+<p>Nel browser si ottiene la seguente pagina:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002BE000000B7B494D346.png" width="491" height="128" style="display:inline-block; margin:4px;width:13cm;height:3.39cm;" class="odt-zoomable" data-zoom-src="images/10000000000002BE000000B7B494D346.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Diamo un&#x27;occhiata in Chrome alla risposta HTTP del server:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
@@ -1411,19 +1392,20 @@
 <a id="__codelineno-4-12" name="__codelineno-4-12"></a>Content-Length: 176
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>Riga 3: specifica il tipo di documento. Qui sono inclusi gli attributi impostati nel metodo [Action02];
+  <li>riga 3: definisce la natura del documento. Si ritrovano gli attributi impostati nel metodo [Action02];
   </li>
-  <li>Riga 12: La dimensione in byte del documento inviato dal server.
+  <li>riga 12: la dimensione in byte del documento inviato dal server.
   </li>
 </ul>
 
-<p>Il documento inviato dal server è questo (screenshot di Chrome):</p>
-<p><img src="images/10000000000002760000005B81C3C0C6.png" width="520" height="75" style="width:13.771cm;height:1.99cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000002760000005B81C3C0C6.png" /></p>
-<p><a id="refheading58032676630786"></a></p>
+<p>Il documento inviato dal server è il seguente (copia da Chrome):</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000002760000005B81C3C0C6.png" width="520" height="75" style="display:inline-block; margin:4px;width:13.771cm;height:1.988cm;" class="odt-zoomable" data-zoom-src="images/10000000000002760000005B81C3C0C6.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p><span id="refheading58032676630786" name="refheading58032676630786" class="odt-bookmark-anchor"></span></p>
 <h2 id="36-azione-con-un-risultato-di-tipo-jsonresult">3.6. <span style="color: #4f81bd">Azione con un risultato di tipo [JsonResult]</span></h2>
 <p>Aggiungiamo la seguente azione al controller [First]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action03</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione03</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">JsonResult</span><span style="color:#000000"> Action03()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">dynamic</span><span style="color:#000000"> personne = </span><span style="color:#0000ff">new</span><span style="color:#000000"> </span><span style="color:#2b91af">ExpandoObject</span><span style="color:#000000">();</span></span></span>
@@ -1434,19 +1416,20 @@
 </code></pre></div>
 
 <ul>
-  <li>riga 4: una variabile di tipo <i>dynamic</i>. In fase di esecuzione, è possibile aggiungere liberamente proprietà a tale variabile. La proprietà viene creata nel momento stesso in cui viene inizializzata;
+  <li>riga 4: una variabile di tipo <i>dynamic</i>. Durante l’esecuzione, è possibile aggiungere liberamente proprietà a tale variabile. La proprietà viene creata contemporaneamente alla sua inizializzazione;
   </li>
-  <li>righe 5-6: inizializziamo due proprietà, <i>nome </i>ed <i>età</i>;
+  <li>righe 5-6: si inizializzano due proprietà <i>nom </i>e <i>age</i>;
   </li>
-  <li>riga 7: restituisce la rappresentazione JSON (JavaScript Object Notation) dell&#x27;oggetto. JSON consente di serializzare un oggetto in una stringa e, viceversa, di deserializzare una stringa in un oggetto. È un&#x27;alternativa alla serializzazione/deserializzazione XML;
+  <li>riga 7: restituisce la rappresentazione JSON (Javascript Object Notation) dell&#x27;oggetto. Il metodo JSON consente di serializzare un oggetto in una stringa di caratteri e, viceversa, di deserializzare una stringa in un oggetto. Si tratta di un&#x27;alternativa alla serializzazione/deserializzazione XML;
   </li>
-  <li>riga 2: l&#x27;azione restituisce un tipo [JsonResult]. Questo tipo può essere restituito solo per una richiesta POST. Se si desidera restituirlo per un metodo GET, è necessario impostare il secondo parametro del costruttore della classe Json (riga 7) su <span style="color: #2b91af">JsonRequestBehavior</span><span style="color: #000000">.AllowGet</span>.
+  <li>riga 2: l&#x27;azione restituisce un tipo [JsonResult]. Questo tipo può essere restituito solo per una richiesta POST. Se si desidera restituirlo per un metodo GET, è necessario assegnare al secondo parametro del costruttore della classe Json (riga 7) il valore <span style="color: #2b91af">JsonRequestBehavior.AllowGet</span>.
   </li>
 </ul>
 
-<p>Quando si richiede l&#x27;URL [/First/Action03], il browser visualizza quanto segue:</p>
-<p><img src="images/10000000000001DA000000766AC21245.png" width="332" height="83" style="width:8.781cm;height:2.185cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001DA000000766AC21245.png" /></p>
-<p>La risposta HTTP del server è la seguente:</p>
+<p>Quando si richiede URL [/First/Action03], il browser visualizza quanto segue:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001DA000000766AC21245.png" width="332" height="83" style="display:inline-block; margin:4px;width:8.781cm;height:2.191cm;" class="odt-zoomable" data-zoom-src="images/10000000000001DA000000766AC21245.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>La risposta del server è invece la seguente:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
@@ -1468,7 +1451,7 @@
 <a id="__codelineno-5-10" name="__codelineno-5-10"></a>Content-Length: 58
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>Riga 3: specifica che il documento inviato è in formato JSON;
+  <li>riga 3: specifica che il documento inviato è JSON;
   </li>
   <li>riga 10: il documento inviato è di 58 byte. È il seguente:
   </li>
@@ -1476,27 +1459,29 @@
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>[{&quot;Key&quot;:&quot;nom&quot;,&quot;Value&quot;:&quot;someone&quot;},{&quot;Key&quot;:&quot;age&quot;,&quot;Value&quot;:20}]
 </code></pre></div>
-<p>L&#x27;elemento dinamico [person] viene interpretato da JSON come un array di dizionari in cui ogni dizionario:</p>
+<p>L&#x27;elemento dinamico [personne] viene visto da JSON come un array di dizionari in cui ogni dizionario:</p>
 <ul>
-  <li>corrisponde a un campo della variabile [person];
+  <li>corrisponde a un campo della variabile [personne];
   </li>
-  <li>ha due chiavi, &quot;Key&quot; e &quot;Value&quot;. &quot;Key&quot; ha come valore associato il nome del campo, mentre &quot;Value&quot; ha il valore del campo.
+  <li>ha due chiavi: «Key» e «Value». A «Key» è associato il nome del campo, mentre a «Value» è associato il valore del campo.
   </li>
 </ul>
-<p><a id="refheading58034676630786"></a></p>
-<h2 id="37-azione-con-un-risultato-string">3.7. <span style="color: #4f81bd">Azione con un risultato [string]</span></h2>
+
+<p><span id="refheading58034676630786" name="refheading58034676630786" class="odt-bookmark-anchor"></span></p>
+<h2 id="37-azione-con-un-risultato-di-tipo-string">3.7. <span style="color: #4f81bd">Azione con un risultato di tipo [string]</span></h2>
 <p>Aggiungiamo la seguente azione al controller [First]:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action04</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione04</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">string</span><span style="color:#000000"> Action04()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#a31515">&quot;&lt;h3&gt;Contrôleur=First, Action=Action04&lt;/h3&gt;&quot;</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Quando richiediamo l&#x27;URL [/First/Action04] in Chrome, otteniamo la seguente risposta:</p>
-<p><img src="images/100000000000016D000000769909198B.png" width="255" height="83" style="width:6.759cm;height:2.185cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016D000000769909198B.png" /></p>
-<p>Possiamo notare che il tag &lt;h3&gt; è stato interpretato. Diamo un&#x27;occhiata alla risposta HTTP del server:</p>
+<p>Quando richiediamo l’URL [/First/Action04] con Chrome, otteniamo la seguente risposta:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000016D000000769909198B.png" width="255" height="83" style="display:inline-block; margin:4px;width:6.759cm;height:2.191cm;" class="odt-zoomable" data-zoom-src="images/100000000000016D000000769909198B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Si nota che il tag &lt;h3&gt; è stato interpretato. Esaminiamo la risposta HTTP fornita dal server:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-7-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-7-3"> 3</a></span>
@@ -1524,19 +1509,19 @@
 <p>e il seguente documento:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;h3&gt;Contrôleur=First, Action=Action04&lt;/h3&gt;
 </code></pre></div>
-<p>Come si vede alla riga 3, il server ha indicato che stava inviando testo in formato HTML. Questo è il motivo per cui il browser ha interpretato il tag &lt;h3&gt;. Quando si desidera inviare testo semplice, è quindi preferibile restituire un [ContentResult] piuttosto che una [string]. Il [ContentResult] ci permette di specificare un tipo MIME &quot;text/plain&quot; per indicare che stiamo inviando testo non formattato, che il browser non tenterà di interpretare.</p>
-<p><a id="refheading58036676630786"></a></p>
-<h2 id="38-azione-con-un-tipo-emptyresult">3.8. <span style="color: #4f81bd">Azione con un tipo [EmptyResult]</span></h2>
-<p>Consideriamo la seguente nuova azione:</p>
+<p>Alla riga 3 si vede che il server ha indicato di inviare del testo nel formato HTML. Ecco perché il browser ha interpretato il tag &lt;h3&gt;. Quando si desidera inviare testo semplice, è quindi preferibile restituire un [ContentResult] piuttosto che un [string]. Il [ContentResult] ci permette infatti di specificare un tipo MIME &quot;text/plain&quot; per indicare che si sta inviando testo non formattato, quindi non soggetto a interpretazione da parte del browser.</p>
+<p><span id="refheading58036676630786" name="refheading58036676630786" class="odt-bookmark-anchor"></span></p>
+<h2 id="38-azione-con-un-risultato-di-tipo-emptyresult">3.8. <span style="color: #4f81bd">Azione con un risultato di tipo [EmptyResult]</span></h2>
+<p>Si consideri la seguente nuova azione:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action05</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione05</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">EmptyResult</span><span style="color:#000000"> Action05()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#0000ff">new</span><span style="color:#000000"> </span><span style="color:#2b91af">EmptyResult</span><span style="color:#000000">();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>L&#x27;azione restituisce semplicemente un tipo [EmptyResult]. In questo caso, il server invia una risposta vuota al client, come mostrato nella sua risposta HTTP:</p>
+<p>L’azione si limita a restituire un tipo [EmptyResult]. In questo caso, il server invia una risposta vuota al client, come mostra la sua risposta HTTP:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
 <span class="normal"><a href="#__codelineno-9-2">2</a></span>
 <span class="normal"><a href="#__codelineno-9-3">3</a></span>
@@ -1556,26 +1541,29 @@
 <a id="__codelineno-9-9" name="__codelineno-9-9"></a>Content-Length: 0
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>Riga 9: Il server informa il proprio client che sta inviando un documento vuoto.
+  <li>riga 9: il server comunica al cliente che gli sta inviando un documento vuoto.
   </li>
 </ul>
-<p><a id="refheading58038676630786"></a></p>
+
+<p><span id="refheading58038676630786" name="refheading58038676630786" class="odt-bookmark-anchor"></span></p>
 <h2 id="39-azione-con-un-risultato-di-tipo-redirectresult-1">3.9. <span style="color: #4f81bd">Azione con un risultato di tipo [RedirectResult] - 1</span></h2>
 <p>Si consideri la seguente nuova azione:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action06</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione06</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">RedirectResult</span><span style="color:#000000"> Action06()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#0000ff">new</span><span style="color:#000000"> </span><span style="color:#2b91af">RedirectResult</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;/First/Action05&quot;</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>L&#x27;azione restituisce un tipo [RedirectResult]. Questo tipo consente di inviare al client una richiesta di reindirizzamento all&#x27;URL specificato nel costruttore (riga 4). Il client invierà quindi una nuova richiesta GET a [/First/Action05]. Il client effettua quindi due richieste in totale.</p>
+<p>L&#x27;azione restituisce un tipo [RedirectResult]. Questo tipo consente di inviare al cliente un comando di reindirizzamento verso il parametro del costruttore URL (riga 4). Il client invierà quindi una nuova richiesta GET a [/First/Action05]. Il client effettua quindi due richieste in totale. </p>
 <p>Il browser visualizza il risultato della seconda richiesta:</p>
-<p><img src="images/100000000000016E0000007EE49A70A7.png" width="256" height="88" style="width:6.78cm;height:2.334cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016E0000007EE49A70A7.png" /></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000016E0000007EE49A70A7.png" width="256" height="88" style="display:inline-block; margin:4px;width:6.78cm;height:2.33cm;" class="odt-zoomable" data-zoom-src="images/100000000000016E0000007EE49A70A7.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
 <p>Esaminiamo la risposta HTTP del server in Chrome:</p>
-<p><img src="images/10000000000000A1000000C0DD2AF862.png" width="113" height="134" style="width:2.979cm;height:3.552cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000A1000000C0DD2AF862.png" /></p>
-<p>Sopra vediamo le due richieste del browser. Esaminiamo la prima richiesta [Action06]. La risposta HTTP del server è la seguente:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000A1000000C0DD2AF862.png" width="113" height="135" style="display:inline-block; margin:4px;width:2.979cm;height:3.56cm;" class="odt-zoomable" data-zoom-src="images/10000000000000A1000000C0DD2AF862.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Come si vede sopra, sono presenti le due richieste del browser. Esaminiamo la prima richiesta [Action06]. La risposta HTTP del server è la seguente:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
@@ -1599,13 +1587,13 @@
 <a id="__codelineno-10-11" name="__codelineno-10-11"></a>Content-Length: 132
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>Riga 1: Il server ha risposto con un codice di stato 302 Found. In precedenza era 200 OK, il che significa che il documento richiesto è stato trovato. Il codice 302 indica che è richiesto un reindirizzamento. L&#x27;URL di reindirizzamento è fornito alla riga 4. Questo corrisponde all&#x27;URL di reindirizzamento che abbiamo specificato nel codice dell&#x27;azione;
+  <li>riga 1: il server ha risposto con un codice 302 Found. In precedenza era 200 OK, il che significa che il documento richiesto è stato trovato. Il codice 302 indica che è richiesto un reindirizzamento. L’indirizzo di reindirizzamento è indicato nella riga 4. Qui ritroviamo l’indirizzo di reindirizzamento che avevamo specificato nel codice dell’azione;
   </li>
-  <li>Riga 11: Il server indica che, con la sua risposta HTTP, sta inviando un documento text/html (riga 3) di 132 byte (riga 11). Quando esaminiamo la risposta alla richiesta [Action06] in Chrome, è vuota, come previsto. Probabilmente c&#x27;è una spiegazione, ma non so quale sia.
+  <li>riga 11: il server indica che con la sua risposta HTTP invia un documento di tipo text/html (riga 3) di 132 byte (riga 11). Quando si esamina in Chrome la risposta alla richiesta [Action06], questa risulta vuota, come ci si poteva aspettare. Probabilmente c’è una spiegazione, ma non la conosco.
   </li>
 </ul>
 
-<p>A causa del reindirizzamento, il browser effettua una nuova richiesta GET all&#x27;URL specificato nella riga 4 sopra, come si può vedere in Chrome alla riga 1 qui sotto:</p>
+<p>A causa del reindirizzamento, il browser effettua una nuova richiesta GET verso l’URL specificata alla riga 4 sopra, come si può vedere in Chrome alla riga 1 qui sotto:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
 <span class="normal"><a href="#__codelineno-11-2">2</a></span>
 <span class="normal"><a href="#__codelineno-11-3">3</a></span>
@@ -1615,31 +1603,31 @@
 <span class="normal"><a href="#__codelineno-11-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="n">GET</span> <span class="o">/</span><span class="n">First</span><span class="o">/</span><span class="n">Action05</span> <span class="n">HTTP</span><span class="o">/</span><span class="mf">1.1</span>
 <a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="n">Host</span><span class="p">:</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">49302</span>
 <a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="n">Connection</span><span class="p">:</span> <span class="n">keep</span><span class="o">-</span><span class="n">alive</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="n">Accept</span><span class="p">:</span> <span class="n">text</span><span class="o">/</span><span class="n">html</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xhtml</span><span class="o">+</span><span class="n">xml</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xml</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="o">*/*</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="n">Accept</span><span class="p">:</span> <span class="n">text</span><span class="o">/</span><span class="n">html</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xhtml</span><span class="o">+</span><span class="n">xml</span><span class="p">,</span><span class="n">application</span><span class="o">/</span><span class="n">xml</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.9</span><span class="p">,</span><span class="o">*/*</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span>
 <a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="n">User</span><span class="o">-</span><span class="n">Agent</span><span class="p">:</span> <span class="n">Mozilla</span><span class="o">/</span><span class="mf">5.0</span> <span class="p">(</span><span class="n">Windows</span> <span class="n">NT</span> <span class="mf">6.2</span><span class="p">;</span> <span class="n">WOW64</span><span class="p">)</span> <span class="n">AppleWebKit</span><span class="o">/</span><span class="mf">537.36</span> <span class="p">(</span><span class="n">KHTML</span><span class="p">,</span> <span class="n">like</span> <span class="n">Gecko</span><span class="p">)</span> <span class="n">Chrome</span><span class="o">/</span><span class="mf">29.0.1547.76</span> <span class="n">Safari</span><span class="o">/</span><span class="mf">537.36</span>
 <a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Encoding</span><span class="p">:</span> <span class="n">gzip</span><span class="p">,</span><span class="n">deflate</span><span class="p">,</span><span class="n">sdch</span>
 <a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="n">Accept</span><span class="o">-</span><span class="n">Language</span><span class="p">:</span> <span class="n">fr</span><span class="o">-</span><span class="n">FR</span><span class="p">,</span><span class="n">fr</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span><span class="n">en</span><span class="o">-</span><span class="n">US</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.6</span><span class="p">,</span><span class="n">en</span><span class="p">;</span><span class="n">q</span><span class="o">=</span><span class="mf">0.4</span>
 </code></pre></div></td></tr></table></div>
-<p><a id="refheading58040676630786"></a></p>
+<p><span id="refheading58040676630786" name="refheading58040676630786" class="odt-bookmark-anchor"></span></p>
 <h2 id="310-azione-con-un-risultato-di-tipo-redirectresult-2">3.10. <span style="color: #4f81bd">Azione con un risultato di tipo [RedirectResult] - 2</span></h2>
 <p>Si consideri la seguente nuova azione:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action07</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione07</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">RedirectResult</span><span style="color:#000000"> Action07()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#0000ff">new</span><span style="color:#000000"> </span><span style="color:#2b91af">RedirectResult</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;/First/Action05&quot;</span><span style="color:#000000">,</span><span style="color:#0000ff">true</span><span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Alla riga 4, abbiamo aggiunto un secondo parametro al costruttore [RedirectResult]. Si tratta di un valore booleano il cui valore predefinito è <em>false</em>. Se impostato su <em>true</em>, modifica la risposta HTTP inviata al client. Diventa:</p>
+<p>Alla riga 4 è stato aggiunto un secondo parametro al costruttore di tipo [RedirectResult]. Si tratta di un valore booleano che per impostazione predefinita è <em>false</em>. Quando lo si imposta su <em>true</em>, si modifica la risposta HTTP inviata al client. Diventa:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>HTTP/1.1 301 Moved Permanently
 </code></pre></div>
-<p>Pertanto, il codice di risposta inviato al client è ora <em>301 Moved Permanently</em>. Il reindirizzamento avviene come prima, ma indichiamo che questo reindirizzamento è permanente. Ciò consente ai motori di ricerca di sostituire il vecchio URL con quello nuovo nei loro risultati.</p>
-<p><a id="refheading58042676630786"></a></p>
-<h2 id="311-azione-con-un-risultato-di-tipo-redirecttorouteresult">3.11. <span style="color: #4f81bd">Azione con un risultato di tipo [RedirectToRouteResult]</span></h2>
-<p>Consideriamo la seguente nuova azione:</p>
+<p>Pertanto, il codice di risposta inviato al cliente è ora <em>301 Moved Permanently</em>. Il reindirizzamento avviene come in precedenza, ma si indica che tale reindirizzamento è permanente. Ciò consente ai motori di ricerca di sostituire nei propri risultati il vecchio URL con il nuovo.</p>
+<p><span id="refheading58042676630786" name="refheading58042676630786" class="odt-bookmark-anchor"></span></p>
+<h2 id="311-azione-con-un-risultato-del-tipo-redirecttorouteresult">3.11. <span style="color: #4f81bd">Azione con un risultato del tipo [RedirectToRouteResult]</span></h2>
+<p>Si consideri la seguente nuova azione:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action08</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione08</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">RedirectToRouteResult</span><span style="color:#000000"> Action08()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> </span><span style="color:#0000ff">new</span><span style="color:#000000"> </span><span style="color:#2b91af">RedirectToRouteResult</span><span style="color:#000000">(</span><span style="color:#a31515">&quot;Default&quot;</span><span style="color:#000000">,</span><span style="color:#0000ff">new</span><span style="color:#000000"> </span><span style="color:#2b91af">RouteValueDictionary</span><span style="color:#000000">(</span><span style="color:#0000ff">new</span><span style="color:#000000"> {controller=</span><span style="color:#a31515">&quot;First&quot;</span><span style="color:#000000">,action=</span><span style="color:#a31515">&quot;Action05&quot;</span><span style="color:#000000">}));</span></span></span>
@@ -1647,11 +1635,11 @@
 </code></pre></div>
 
 <ul>
-  <li>Riga 2: L&#x27;azione restituisce un tipo [RedirectToRouteResult]. Questo tipo consente di reindirizzare un client a un URL specificato, non tramite una stringa come in precedenza, ma tramite un percorso.
+  <li>riga 2: l’azione restituisce un tipo [RedirectToRouteResult]. Questo tipo consente di reindirizzare un client verso un URL specificato non tramite una stringa di caratteri come in precedenza, ma tramite un percorso.
   </li>
 </ul>
 
-<p>I percorsi sono definiti in [App_Start/RouteConfig]. Attualmente ce n&#x27;è solo uno:</p>
+<p>I percorsi sono definiti in [App_Start/RouteConfig]. Attualmente ne esiste solo uno:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content">      routes.MapRoute(</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          name: </span><span style="color:#a31515">&quot;Default&quot;</span><span style="color:#000000">,</span></span></span>
@@ -1661,7 +1649,7 @@
 </code></pre></div>
 
 <ul>
-  <li>Alla riga 4, al client viene indicato di reindirizzarsi alla route denominata [Default] con la variabile controller impostata su &quot;First&quot; e la variabile action impostata su &quot;Action05&quot;. Il sistema di routing genererà quindi l&#x27;URL di reindirizzamento <i>/First/Action05</i>. Ciò è mostrato nella risposta HTTP del server:
+  <li>alla riga 4, si richiede al client di reindirizzarsi verso il percorso denominato [Default] con la variabile controller=First e la variabile action=Action05. Il sistema di routing genererà quindi la reindirizzamento URL da <i>/First/Action05</i>. È quanto mostra la risposta HTTP del server:
   </li>
 </ul>
 
@@ -1690,14 +1678,15 @@
 <ul>
   <li>riga 1: il reindirizzamento;
   </li>
-  <li>riga 4: l&#x27;URL di reindirizzamento generato dal sistema di routing degli URL.
+  <li>riga 4: l&#x27;indirizzo di reindirizzamento generato dal sistema di routing URL.
   </li>
 </ul>
-<p><a id="refheading58044676630786"></a></p>
-<h2 id="312-azione-con-tipo-di-ritorno-void">3.12. <span style="color: #4f81bd">Azione con tipo di ritorno [void]</span></h2>
-<p>Consideriamo la seguente nuova azione:</p>
+
+<p><span id="refheading58044676630786" name="refheading58044676630786" class="odt-bookmark-anchor"></span></p>
+<h2 id="312-azione-con-un-risultato-di-tipo-void">3.12. <span style="color: #4f81bd">Azione con un risultato di tipo [void]</span></h2>
+<p>Si consideri la seguente nuova azione:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Action09</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// Azione09</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">void</span><span style="color:#000000"> Action09()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">string</span><span style="color:#000000"> nom = Request.QueryString[</span><span style="color:#a31515">&quot;nom&quot;</span><span style="color:#000000">] ?? </span><span style="color:#a31515">&quot;inconnu&quot;</span><span style="color:#000000">;</span></span></span>
@@ -1707,9 +1696,9 @@
 </code></pre></div>
 
 <ul>
-  <li>riga 2: l&#x27;azione non restituisce alcun risultato. Scrive direttamente nel flusso di risposta inviato al client;
+  <li>riga 2: l&#x27;azione non restituisce alcun risultato. Scrive direttamente nel flusso della risposta inviata al cliente;
   </li>
-  <li>riga 4: recuperiamo un potenziale parametro denominato [name] dalla richiesta. È accessibile tramite la proprietà [<b>Request</b>] della classe [Controller] da cui il controller [First] eredita. Il parametro [name] passato nel modulo [/First/Action09?name=something] è disponibile in <b>Request.QueryString[&quot;name&quot;]</b>. La sintassi della riga 4 è equivalente a:
+  <li>riga 4: si recupera un eventuale parametro denominato [nom] nella richiesta. Questo è accessibile tramite la proprietà [Request] del controller [Controller] da cui eredita il controller [First]. Il parametro [nom], passato nella forma [/First/Action09?nom=quelquechose], è disponibile in <b>Request.QueryString[&quot;nom&quot;]</b>. La sintassi della riga 4 è equivalente a:
   </li>
 </ul>
 
@@ -1719,18 +1708,18 @@
 <a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="o">}</span>
 </code></pre></div>
 <ul>
-  <li>riga 5: la risposta inviata al client è accessibile tramite la proprietà [<b>Response</b>] della classe [Controller] da cui il controller [First] eredita;
+  <li>riga 5: la risposta inviata al client è accessibile tramite la proprietà [Response] del controller [Controller], da cui eredita il controller [First];
   </li>
-  <li>riga 5: impostiamo l&#x27;intestazione HTTP [Content-Type], che indica la natura del documento che il server sta per inviare al client. Qui, &quot;text/plain&quot; indica che il documento è testo semplice che non deve essere interpretato dal browser;
+  <li>riga 5: si imposta l&#x27;intestazione HTTP [Content-Type] che indica la natura del documento che il server sta per inviare al cliente. In questo caso, &quot;text/plain&quot; indica che il documento è testo semplice che non deve essere interpretato dal browser;
   </li>
-  <li>riga 6: inseriamo una stringa di caratteri nel corpo della risposta. Abbiamo incluso dei tag HTML che non dovrebbero essere interpretati dal browser, poiché quest&#x27;ultimo avrà già ricevuto l&#x27;intestazione HTTP [Content-Type: text/plain]. È proprio questo che vogliamo verificare.
+  <li>riga 6: si scrive nel flusso della risposta una stringa di caratteri. In essa sono stati inclusi dei tag HTML che non devono essere interpretati dal browser, poiché quest’ultimo avrà precedentemente ricevuto l’intestazione HTTP [Content-Type : text/plain&quot;]. È proprio questo che vogliamo verificare.
   </li>
 </ul>
 
-<p>Compiliamo il progetto e richiediamo l&#x27;URL [/First/Action09?name=someone ][1] e poi l&#x27;URL [/First/Action09 ] [2]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005FC000000F0C6E72D5F.png" width="680" height="107" style="display:inline-block; margin:4px;width:17.999cm;height:2.82cm;" class="odt-zoomable" data-zoom-src="images/10000000000005FC000000F0C6E72D5F.png" /></td></tr></table>
+<p>Compiliamo il progetto e richiediamo l’URL [/First/Action09?nom=someone ][1] e poi l’URL [/First/Action09 ] [2]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005FC000000F0C6E72D5F.png" width="680" height="107" style="display:inline-block; margin:4px;width:17.999cm;height:2.819cm;" class="odt-zoomable" data-zoom-src="images/10000000000005FC000000F0C6E72D5F.png" /></td></tr></table>
 
-<p>Ora diamo un&#x27;occhiata alla risposta HTTP del server in Chrome:</p>
+<p>Ora diamo un&#x27;occhiata in Chrome alla risposta HTTP del server:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1">1</a></span>
 <span class="normal"><a href="#__codelineno-15-2">2</a></span>
 <span class="normal"><a href="#__codelineno-15-3">3</a></span>
@@ -1742,13 +1731,15 @@
 <a id="__codelineno-15-5" name="__codelineno-15-5"></a>Content-Length: 144
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>riga 3: vediamo l&#x27;intestazione HTTP che abbiamo impostato noi stessi nel codice dell&#x27;azione.
+  <li>riga 3: ritroviamo l’intestazione HTTP che avevamo impostato noi stessi nel codice dell’azione.
   </li>
 </ul>
-<p><a id="refheading58046676630786"></a></p>
+
+<p><span id="refheading58046676630786" name="refheading58046676630786" class="odt-bookmark-anchor"></span></p>
 <h2 id="313-un-secondo-controller">3.13. <span style="color: #4f81bd">Un secondo controller</span></h2>
-<p>Creiamo un secondo controller nel progetto. Seguiremo il metodo descritto nella sezione 3.1, a <a href="#refheading10128914791633"><u><span style="color: #0563c1">pagina 36</span></u></a>. Lo chiameremo [Second].</p>
-<p><img src="images/10000000000000C50000006F78BB882F.png" width="138" height="78" style="width:3.649cm;height:2.057cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000000C50000006F78BB882F.png" /></p>
+<p>Creiamo nel progetto un secondo controller. Seguiremo il metodo descritto al paragrafo<a href="#refheading10128914791633"><u><span style="color: #0563c1"> 3.1</span></u></a>, pagina<a href="#refheading10128914791633"><u><span style="color: #0563c1"> 40</span></u></a>. Lo chiameremo [Second].</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000000C50000006F78BB882F.png" width="138" height="77" style="display:inline-block; margin:4px;width:3.649cm;height:2.05cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C50000006F78BB882F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
 <p>Il codice generato è il seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01.Controllers</span></span></span>
@@ -1757,12 +1748,12 @@
 <span class="odt-code-line"><span class="odt-code-line-content">  {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">//</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// GET: /Second/</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ActionResult</span><span style="color:#000000"> Index()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> View();</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
@@ -1771,41 +1762,42 @@
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Text;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">using</span><span style="color:#000000"> System.Web.Mvc;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">namespace</span><span style="color:#000000"> Exemple_01.Controllers</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#0000ff">class</span><span style="color:#000000"> </span><span style="color:#2b91af">SecondController</span><span style="color:#000000"> : </span><span style="color:#2b91af">Controller</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// /Second/Action01</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// /Second/Azione01</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ContentResult</span><span style="color:#000000"> Action01()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">return</span><span style="color:#000000"> Content(</span><span style="color:#a31515">&quot;Contrôleur=Second, Action=Action01&quot;</span><span style="color:#000000">, </span><span style="color:#a31515">&quot;text/plain&quot;</span><span style="color:#000000">, </span><span style="color:#2b91af">Encoding</span><span style="color:#000000">.UTF8);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Quindi richiediamo l&#x27;URL [/Second/Action01] utilizzando un browser. Otteniamo la seguente risposta:</p>
-<p><img src="images/10000000000001840000007C98FE446F.png" width="271" height="87" style="width:7.181cm;height:2.295cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001840000007C98FE446F.png" /></p>
-<p>Questo URL è stato richiesto utilizzando una richiesta HTTP GET, come mostrato nei log HTTP relativi alla richiesta in Chrome:</p>
+<p>Quindi richiediamo l&#x27;URL [/Second/Action01] con un browser. Otteniamo la seguente risposta:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001840000007C98FE446F.png" width="271" height="87" style="display:inline-block; margin:4px;width:7.181cm;height:2.3cm;" class="odt-zoomable" data-zoom-src="images/10000000000001840000007C98FE446F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Questo URL è stato richiesto con un comando HTTP GET, come mostrano i log HTTP della richiesta in Chrome:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>GET /Second/Action01 HTTP/1.1
 </code></pre></div>
-<p>L&#x27;URL può essere richiesto anche tramite una richiesta HTTP POST. Per dimostrarlo, utilizziamo nuovamente l&#x27;app [Advanced Rest Client]:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005FB00000180482AEB96.png" width="680" height="171" style="display:inline-block; margin:4px;width:17.999cm;height:4.514cm;" class="odt-zoomable" data-zoom-src="images/10000000000005FB00000180482AEB96.png" /></td></tr></table>
+<p>Il codice URL può essere richiesto anche con i comandi HTTP e POST. Per dimostrarlo, utilizziamo nuovamente l’applicazione [Advanced Rest Client]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000005FB00000180482AEB96.png" width="680" height="171" style="display:inline-block; margin:4px;width:17.999cm;height:4.514cm;" class="odt-zoomable" data-zoom-src="images/10000000000005FB00000180482AEB96.png" /></td></tr></table>
 
 <ul>
-  <li>In [1], avvia l&#x27;applicazione (nella scheda [Applicazioni] di una nuova scheda di Chrome);
+  <li>in [1], si avvia l&#x27;applicazione (nella scheda [Applications] di una nuova scheda di Chrome);
   </li>
-  <li>in [2], seleziona l&#x27;opzione [Request];
+  <li>in [2], si seleziona l’opzione [Request];
   </li>
-  <li>in [3], specifica l&#x27;URL richiesto;
+  <li>in [3], si specifica l&#x27;URL richiesta;
   </li>
-  <li>in [4], specificare che l&#x27;URL deve essere richiesto utilizzando una richiesta POST;
+  <li>in [4], si indica che l&#x27;URL deve essere richiesta con un POST;
   </li>
 </ul>
 
-<p>Attiviamo i log di Chrome (CTRL-I) per visualizzare la risposta HTTP del server. Quando clicchiamo su [Invia] per eseguire la richiesta precedente, lo scambio di dati HTTP è il seguente:</p>
+<p>Si attivano i log di Chrome tramite (CTRL-I) per ottenere la risposta HTTP dal server. Quando si esegue [Send], la richiesta precedente, gli scambi HTTP sono i seguenti:</p>
 <p>Il browser invia la seguente richiesta:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
@@ -1830,7 +1822,7 @@
 <ul>
   <li>riga 1: l&#x27;URL viene effettivamente richiesto con un POST;
   </li>
-  <li>Riga 4: La dimensione in byte degli elementi inviati. Qui non ce ne sono.
+  <li>riga 4: la dimensione in byte degli elementi inviati. Qui non ce ne sono.
   </li>
 </ul>
 
@@ -1860,20 +1852,21 @@
 <a id="__codelineno-18-12" name="__codelineno-18-12"></a>Content-Length: 148
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>riga 3: il server invia un documento di testo non formattato (semplice);
+  <li>riga 3: il server invia un documento di testo non formattato (plain);
   </li>
-  <li>riga 12: 148 caratteri.
+  <li>riga 12: di 148 caratteri.
   </li>
 </ul>
 
 <p>Il documento inviato è il seguente:</p>
-<p><img src="images/10000000000001170000006643970F20.png" width="195" height="71" style="width:5.159cm;height:1.886cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001170000006643970F20.png" /></p>
-<p>Otteniamo lo stesso documento della richiesta GET.</p>
-<p><a id="refheading58048676630786"></a></p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001170000006643970F20.png" width="195" height="71" style="display:inline-block; margin:4px;width:5.159cm;height:1.891cm;" class="odt-zoomable" data-zoom-src="images/10000000000001170000006643970F20.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Si ottiene lo stesso documento che con il GET.</p>
+<p><span id="refheading58048676630786" name="refheading58048676630786" class="odt-bookmark-anchor"></span></p>
 <h2 id="314-azione-filtrata-da-un-attributo">3.14. <span style="color: #4f81bd">Azione filtrata da un attributo</span></h2>
 <p>Creiamo la seguente nuova azione:</p>
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-csharp">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// /Second/Action02</span></span></span>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// /Second/Azione02</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    [</span><span style="color:#2b91af">HttpPost</span><span style="color:#000000">]</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ContentResult</span><span style="color:#000000"> Action02()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
@@ -1881,12 +1874,13 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>L&#x27;azione [Action02] è simile all&#x27;azione [Action01], ma specifica che è accessibile solo tramite una richiesta HTTP POST (riga 2). È possibile utilizzare altri attributi:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>HttpGet</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">gestisce solo la richiesta GET</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>HttpHead</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">gestisce solo la richiesta HEAD</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>HttpOptions</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">supporta solo il comando OPTIONS</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>HttpPut</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">supporta solo il comando PUT</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>HttpDelete</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">viene utilizzato solo per il comando DELETE</div></td></tr></table>
+<p>L&#x27;azione [Action02] è analoga all&#x27;azione [Action01], ma si specifica che è accessibile solo tramite il comando HTTP POST (riga 2). Sono disponibili altri attributi:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>HttpGet</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">è valido solo per il comando GET</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>HttpHead</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">è valido solo per il comando HEAD</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>HttpOptions</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">serve solo per l&#x27;ordine OPTIONS</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>HttpPut</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">serve solo per l&#x27;ordine PUT</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>HttpDelete</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">serve solo per l&#x27;ordine DELETE</div></td></tr></table>
 
-<p>Richiediamo l&#x27;URL [/Second/Action02] direttamente nel browser. Viene quindi richiesto tramite un GET. Il browser visualizza quindi la seguente risposta:</p>
-<p><img src="images/100000000000026900000132851B890B.png" width="432" height="214" style="width:11.419cm;height:5.664cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000026900000132851B890B.png" /></p>
-<p>La risposta HTTP del server era la seguente:</p>
+<p>Richiediamo direttamente nel browser URL [/Second/Action02]. Viene quindi richiesta una risposta GET. Il browser visualizza quindi la seguente risposta:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000026900000132851B890B.png" width="432" height="214" style="display:inline-block; margin:4px;width:11.419cm;height:5.669cm;" class="odt-zoomable" data-zoom-src="images/100000000000026900000132851B890B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>La risposta HTTP del server è stata la seguente:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1">1</a></span>
 <span class="normal"><a href="#__codelineno-19-2">2</a></span>
 <span class="normal"><a href="#__codelineno-19-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1"></a>HTTP/1.1 404 Not Found
@@ -1894,16 +1888,17 @@
 <a id="__codelineno-19-3" name="__codelineno-19-3"></a>Content-Length: 3807
 </code></pre></div></td></tr></table></div>
 <ul>
-  <li>Riga 1: Il codice HTTP<b> 404 Not Found </b>indica che il server non è riuscito a trovare il documento richiesto. In questo caso, l&#x27;azione [Action02] non è riuscita a gestire la richiesta GET perché gestisce solo richieste POST;
+  <li>riga 1: il codice HTTP<b> 404 Not Found </b>indica che il server non ha trovato il documento richiesto. In questo caso, l’azione [Action02] non ha potuto soddisfare la richiesta GET poiché gestisce solo i comandi POST;
   </li>
-  <li>Riga 3: La dimensione del documento restituito. Questa è la pagina che è stata visualizzata dal browser:
+  <li>riga 3: la dimensione del documento restituito. Si tratta della pagina visualizzata dal browser:
   </li>
 </ul>
 
-<p><img src="images/10000000000001AD000001572D04E269.png" width="300" height="240" style="width:7.939cm;height:6.348cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001AD000001572D04E269.png" /></p>
-<p><a id="refheading58050676630786"></a></p>
-<h2 id="315-recupero-di-elementi-da-una-route">3.15. <span style="color: #4f81bd">Recupero di elementi da una route</span></h2>
-<p>Nelle due azioni descritte sopra, abbiamo scritto qualcosa del tipo:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/10000000000001AD000001572D04E269.png" width="300" height="240" style="display:inline-block; margin:4px;width:7.939cm;height:6.35cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AD000001572D04E269.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p><span id="refheading58050676630786" name="refheading58050676630786" class="odt-bookmark-anchor"></span></p>
+<h2 id="315-recuperare-gli-elementi-di-un-percorso">3.15. <span style="color: #4f81bd">Recuperare gli elementi di un percorso</span></h2>
+<p>Nelle due azioni descritte in precedenza, si scriveva qualcosa del tipo:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ContentResult</span><span style="color:#000000"> Action02()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
@@ -1911,9 +1906,9 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>I nomi del controller e dell&#x27;azione sono stati hard-coded nel codice. Se modifichiamo questi nomi, il codice non sarà più corretto. Possiamo accedere al controller e all&#x27;azione come segue:</p>
+<p>I nomi del controller e dell&#x27;azione erano scritti in modo fisso nel codice. Se si modificano questi nomi, il codice non è più corretto. È possibile accedere al controller e all&#x27;azione nel modo seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// /Second/Action03</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// /Secondo/Azione03</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#0000ff">public</span><span style="color:#000000"> </span><span style="color:#2b91af">ContentResult</span><span style="color:#000000"> Action03()</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#0000ff">string</span><span style="color:#000000"> texte = </span><span style="color:#0000ff">string</span><span style="color:#000000">.Format(</span><span style="color:#a31515">&quot;Contrôleur={0}, Action={1}&quot;</span><span style="color:#000000">, RouteData.Values[</span><span style="color:#a31515">&quot;controller&quot;</span><span style="color:#000000">], RouteData.Values[</span><span style="color:#a31515">&quot;action&quot;</span><span style="color:#000000">]);</span></span></span>
@@ -1921,7 +1916,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Il percorso definito in [App_Start/RouteConfig] è il seguente:</p>
+<p>La route definita in [App_Start/RouteConfig] è la seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span class="odt-code-line-content">      routes.MapRoute(</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">          name: </span><span style="color:#a31515">&quot;Default&quot;</span><span style="color:#000000">,</span></span></span>
@@ -1930,10 +1925,11 @@
 <span class="odt-code-line"><span class="odt-code-line-content">);</span></span>
 </code></pre></div>
 
-<p>Riga 3: I tre elementi del percorso possono essere recuperati utilizzando <strong>RouteData.Values[&quot;element&quot;],</strong> dove <strong>element</strong> è uno tra [controller, action, id].</p>
-<p>Richiediamo l&#x27;URL [http://localhost:49302/Second/Action03]:</p>
-<p><img src="images/100000000000018100000072F6504BF3.png" width="269" height="80" style="width:7.13cm;height:2.111cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000018100000072F6504BF3.png" /></p>
-<p>Abbiamo recuperato con successo sia il nome del controller che quello dell&#x27;azione.</p>
+<p>Riga 3: i tre elementi del percorso possono essere ottenuti tramite <strong>RouteData.Values[&quot;élément&quot;]</strong> con <strong>l’elemento</strong> in [controller, action, id].</p>
+<p>Richiediamo URL e [http://localhost:49302/Second/Action03]:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><img src="images/100000000000018100000072F6504BF3.png" width="269" height="80" style="display:inline-block; margin:4px;width:7.13cm;height:2.11cm;" class="odt-zoomable" data-zoom-src="images/100000000000018100000072F6504BF3.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;">&nbsp;</td></tr></table>
+
+<p>Abbiamo recuperato correttamente sia il nome del controller che il nome dell’azione.</p>
 
 
 
